@@ -107,10 +107,12 @@ export const FAQ = () => {
                 aria-expanded={toggleFaq.includes(faq.id)}
               >
                 <h2 className="w-3/4 lg:w-auto">{faq.question}</h2>
-                <span>
+                <span className="faq-icon">
                   <img
                     src={toggleFaq.includes(faq.id) ? minus : plus}
-                    alt="plus icon"
+                    alt={
+                      toggleFaq.includes(faq.id) ? 'minus icon' : 'plus icon'
+                    }
                     width={30}
                     height={30}
                   />
