@@ -1,15 +1,27 @@
 import { describe, expect, test } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor, within } from '@testing-library/react';
 import App from './App';
+import userEvent from '@testing-library/user-event';
 
 describe('App', () => {
-  test('should render h1 tag', () => {
+  test('faq should open/close  by clicking it', async () => {
+    const user = userEvent.setup();
     render(<App />);
 
-    const heading = screen.getByRole('heading', { name: 'Hello world!' });
-    const button = screen.getByRole('button', { name: 'Click' });
+    const faqs = screen.getByTestId('faqs');
 
-    expect(heading).toBeInTheDocument();
-    expect(button).toBeInTheDocument();
+    const faqItems = within(faqs).getAllByRole('group');
+
+    faqItems.forEach(async (faq) => {
+      const faqSummary = within(faq).getByRole('heading');
+      await user.click(faqSummary);
+      await waitFor(() => {
+        expect(within(faq).getByRole('paragraph')).toBeVisible();
+      });
+      await user.click(faqSummary);
+      await waitFor(() => {
+        expect(within(faq).getByRole('paragraph')).not.toBeVisible();
+      });
+    });
   });
 });
