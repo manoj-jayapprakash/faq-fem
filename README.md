@@ -1,30 +1,83 @@
-# React + TypeScript + Vite
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- ABOUT THE PROJECT -->
 
-Currently, two official plugins are available:
+## About The Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![Product Name Screen Shot][product-screenshot]](https://faq-fem.vercel.app/)
 
-## Expanding the ESLint configuration
+FAQ accordion
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Built With
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- Tailwind CSS
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+<!-- GETTING STARTED -->
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/manoj-jayapprakash/faq-fem.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run development server
+   ```sh
+   npm run dev
+   ```
+
+<!-- CONTACT -->
+
+## Contact
+
+Manoj - [@manoj-jayapprakash](https://linkedin.com/in/manoj-jayapprakash/)
+
+Project Link: [https://github.com/manoj-jayapprakash/faq-fem](https://github.com/manoj-jayapprakash/faq-fem)
+
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+- Frontend Mentor Challenges [https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[product-screenshot]: /faq.png

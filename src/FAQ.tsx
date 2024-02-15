@@ -104,14 +104,17 @@ export const FAQ = () => {
                     handleFaqToggle(faq.id);
                   }
                 }}
+                aria-expanded={toggleFaq.includes(faq.id)}
               >
                 <h2 className="w-3/4 lg:w-auto">{faq.question}</h2>
-                <img
-                  src={toggleFaq.includes(faq.id) ? minus : plus}
-                  alt="plus icon"
-                  width={30}
-                  height={30}
-                />
+                <span>
+                  <img
+                    src={toggleFaq.includes(faq.id) ? minus : plus}
+                    alt="plus icon"
+                    width={30}
+                    height={30}
+                  />
+                </span>
               </summary>
               <p
                 className={`
