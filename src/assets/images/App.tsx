@@ -1,8 +1,8 @@
-import { FAQ } from './FAQ';
+import { FAQ } from '../../FAQ';
 
 function App() {
   return (
-    <main className="h-screen bg-[url('/mobile.svg')] bg-contain bg-no-repeat bg-light-pink lg:bg-[url('desktop.svg')] flex flex-col justify-between text-dark-purple font-work">
+    <main className="h-screen bg-[url('./assets/images/mobile.svg')] bg-contain bg-no-repeat bg-light-pink lg:bg-[url('./assets/images/desktop.svg')] flex flex-col justify-between text-dark-purple font-work">
       <FAQ />
       <footer className="text-center text-sm">
         Challenge by{' '}
